@@ -30,7 +30,7 @@ Include the payment form to make your first payment.
 
 1. In your `build.gradle` of the root directory add the following line:
     
-    ```json
+    ```gradle
     buildscript {
         repositories {
             ...
@@ -45,7 +45,7 @@ Include the payment form to make your first payment.
     
 2. In your `build.gradle` of the app module add the following task:
 
-    ```json
+    ```gradle
     import de.undercouch.gradle.tasks.download.Download
     
     ...
@@ -60,7 +60,7 @@ Include the payment form to make your first payment.
    
 3. Next add the following snippet in your `build.gradle` of the app module:
 
-    ```json
+    ```gradle
     repositories {
         flatDir {
             dirs 'libs'
@@ -79,7 +79,7 @@ Follow these steps to edit your `build.gradle` and start using Adyen checkout fo
 4. Copy `volley-release.aar` from one of the modules added above `lib` folder into your `app` lib folder.
 5. Add the following code snippet to your `android` module insinde `build.gradle`"
 
-    ``` json
+    ``` gradle
     repositories {
         flatDir {
             dirs 'libs'
@@ -89,7 +89,7 @@ Follow these steps to edit your `build.gradle` and start using Adyen checkout fo
 
 6. Add the following code snippet to your `dependencies` module insinde `build.gradle`:
 
-    ``` json
+    ``` gradle
     compile project(':adyenpaysdk')
     compile project(':adyenuisdk')
     ```
@@ -139,7 +139,7 @@ Follow these steps to edit your `build.gradle` and start using Adyen checkout fo
 2. Copy `adyenpaysdk` and `adyenuisdk` in your application folder.
 3. Add the following code snippet to your `dependencies` module insinde build.gradle:
 
-    ```json
+    ```gradle
     compile project(':adyenpaysdk')
     compile project(':adyenuisdk')
     ```
@@ -182,7 +182,7 @@ Follow these steps to edit your `build.gradle` and start using Adyen checkout fo
 2. Copy `adyenpaysdk` in your application folder.
 3. Add the following code snippet to your `dependencies` module insinde build.gradle:
 
-    ```json
+    ```gradle
     compile project(':adyenpaysdk')
     ```
     
